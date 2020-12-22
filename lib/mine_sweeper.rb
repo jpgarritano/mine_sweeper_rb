@@ -32,6 +32,8 @@ class MineSweeper
     end
   end
 
+  private
+
   def adj_mines(i_pos, j_pos)
     tot = 0
     (i_pos - 1..i_pos + 1).each do |x|
@@ -51,8 +53,6 @@ class MineSweeper
   def random_field
     rand(2).positive? ? MINE_FIELD : EMPTY_FIELD
   end
-
-  private
 
   def add_borders
     fill_borders
