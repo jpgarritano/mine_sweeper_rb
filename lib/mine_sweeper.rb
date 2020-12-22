@@ -11,6 +11,7 @@ class MineSweeper
 
   def initialize(size = 5)
     @size = size
+    #Se agregan 2 columnas y 2 filas mas para el dibujo final con bordes
     @table = Array.new(size + 2) { Array.new(size + 2) }
   end
 
